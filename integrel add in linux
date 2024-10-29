@@ -1,0 +1,21 @@
+#! /bin/bash
+
+num=1
+until test $num -eq 10
+do
+    num=$(( $num + 1 ))
+    echo $num
+$ num=1
+$ num=$(( $num + 1 ))
+$ echo $num
+2
+num=1
+    time while [[ $num -lt 10000 ]]; do
+            num=$(( num+1 ))
+    done
+    echo $num
+    num=1
+    time while /bin/test $num -lt 10000; do
+            num=$( /bin/expr $num + 1 )
+    done
+    
